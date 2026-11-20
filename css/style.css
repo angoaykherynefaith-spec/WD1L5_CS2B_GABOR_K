@@ -1,1 +1,452 @@
+/* =================================
+   KHERYNE FAITH - DEVELOPER PORTFOLIO
+   External CSS Stylesheet
+================================= */
+
+/* 1. GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* 2. ROOT VARIABLES */
+:root {
+    --navy: #0b1d35;
+    --navy-light: #142c4c;
+    --blue: #3478c8;
+    --white: #ffffff;
+    --gray: #f4f6f9;
+    --text: #344054;
+    --muted: #667085;
+}
+
+
+/* 3. GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+section {
+    scroll-margin-top: 75px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    color: var(--navy);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+
+/* 4. NAVIGATION BAR */
+.navbar {
+    background-color: var(--navy);
+    padding: 18px 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--white);
+    margin-left: 18px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #75b6ff;
+}
+
+
+/* 5. HERO SECTION */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #ffffff 60%,
+        #eaf1fa 100%
+    );
+    padding: 120px 0 70px;
+}
+
+.welcome-text {
+    color: var(--blue);
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    color: var(--navy);
+    font-size: 55px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero-section h1 span {
+    color: var(--blue);
+}
+
+.hero-section h3 {
+    color: var(--muted);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 550px;
+    line-height: 1.9;
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: var(--navy);
+    border: 2px solid var(--navy);
+    padding: 12px 25px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    transform: translateY(-3px);
+}
+
+.profile-image {
+    width: 280px;
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    border: 5px solid var(--white);
+    box-shadow: 0 10px 35px rgba(11, 29, 53, 0.15);
+}
+
+
+/* 6. ABOUT SECTION */
+#about {
+    background-color: var(--gray);
+}
+
+.about-image {
+    width: 260px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#about h3 {
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#about p {
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+#about blockquote {
+    color: var(--blue);
+    font-weight: 600;
+    font-style: italic;
+    border-left: 4px solid var(--blue);
+    padding-left: 15px;
+    margin-top: 25px;
+}
+
+
+/* 7. DESIGN PHILOSOPHY */
+#philosophy {
+    background-color: var(--white);
+}
+
+#philosophy .section-description {
+    font-size: 17px;
+}
+
+
+/* 8. PROJECTS SECTION */
+#projects {
+    background-color: var(--gray);
+}
+
+.project-card {
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--white);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(11, 29, 53, 0.12);
+}
+
+.project-card img {
+    height: 210px;
+    object-fit: cover;
+}
+
+.project-card .card-body {
+    padding: 25px;
+}
+
+.project-card .card-title {
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.project-card .card-text {
+    color: var(--muted);
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* 9. CONTACT SECTION */
+#contact {
+    background-color: var(--white);
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-control {
+    padding: 13px;
+    border: 1px solid #dce2ea;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(52, 120, 200, 0.12);
+}
+
+
+/* 10. FOOTER */
+footer {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 13px;
+}
+
+
+/* 11. RESPONSIVE DESIGN */
+@media (max-width: 991px) {
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-image {
+        margin-top: 40px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .section-padding {
+        padding: 70px 15px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .hero-section h1 {
+        font-size: 34px;
+    }
+
+    .hero-section h3 {
+        font-size: 20px;
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-image {
+        margin-bottom: 30px;
+    }
+}
+
+/* DESIGN PHILOSOPHY MOTTO */
+
+.design-motto {
+    text-align: center;
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+/* =================================
+   DARK / LIGHT MODE
+================================= */
+
+.theme-toggle {
+    background: transparent;
+    color: white;
+    border: 1px solid #75b6ff;
+    border-radius: 25px;
+    padding: 8px 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #3478c8;
+    transform: scale(1.05);
+}
+
+/* DARK THEME */
+
+body.dark-mode {
+    --white: #101b2b;
+    --gray: #17263a;
+    --text: #e5eaf2;
+    --muted: #b0bdce;
+    --navy: #dceaff;
+    --navy-light: #263c59;
+    --blue: #75b6ff;
+
+    background-color: #101b2b;
+    color: #e5eaf2;
+}
+
+body.dark-mode .hero-section {
+    background: linear-gradient(135deg, #101b2b, #172b45);
+}
+
+body.dark-mode #about,
+body.dark-mode #projects {
+    background-color: #17263a;
+}
+
+body.dark-mode #philosophy,
+body.dark-mode #contact {
+    background-color: #101b2b;
+}
+
+body.dark-mode .project-card {
+    background-color: #20334d;
+    color: #e5eaf2;
+}
+
+body.dark-mode .project-card .card-title {
+    color: #ffffff;
+}
+
+body.dark-mode .form-control {
+    background-color: #20334d;
+    color: white;
+    border-color: #435875;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #b0bdce;
+}
+
+body.dark-mode .navbar {
+    background-color: #081321;
+}
+
+/* MOBILE BUTTON ALIGNMENT */
+
+@media (max-width: 991px) {
+    .theme-toggle {
+        margin: 10px 0;
+    }
+}
+
+/* =================================
+   ANIMATED NAVIGATION
+================================= */
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #75b6ff;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+    color: #75b6ff;
+}
 
